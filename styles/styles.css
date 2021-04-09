@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-color: #505050;
+}
+
+.main {
+    background-color: rgb(100, 100, 100);
+}
+
+.topnav {
+    background-color: rgb(110, 110, 110);
+    padding-bottom: 20px;
+}
+
+.topnav a {
+    color: rgb(0, 128, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.buttons {
+    --max-places: 3;
+    --button-size: 200px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(var(--max-places), var(--button-size));
+    grid-template-rows: repeat(var(--max-places), var(--button-size));
+    background-color: rgb(120, 120, 120);
+}
+
+.main_button {
+    background-color: rgb(220, 220, 220);
+    border: 15px solid rgb(50, 50, 50);
+    width: var(--btnsize);
+    height: var(--btnsize);
+    font-size: 100px;
+}
