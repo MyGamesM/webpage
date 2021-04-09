@@ -7,16 +7,25 @@
     font-family: Poppins;
 }
 
+:root {
+    --bg-color: rgb(80, 80, 80);
+    --top-nav-color: rgb(100, 100, 100);
+    --max-places: 3;
+    --button-size: 200px;
+    --btn-bg-color: rgb(220, 220, 220);
+}
+
 body {
-    background-color: #505050;
+    background-color: var(--bg-color);
 }
 
 .main {
-    background-color: rgb(100, 100, 100);
+    /* background-color: rgb(100, 100, 100); */
+    background-color: var(--bg-color);
 }
 
 .topnav {
-    background-color: rgb(110, 110, 110);
+    background-color: var(--top-nav-color);
     padding-bottom: 20px;
 }
 
@@ -29,20 +38,18 @@ body {
 }
 
 .buttons {
-    --max-places: 3;
-    --button-size: 200px;
+    background-color: rgb(120, 120, 120);
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     grid-template-columns: repeat(var(--max-places), var(--button-size));
     grid-template-rows: repeat(var(--max-places), var(--button-size));
-    background-color: rgb(120, 120, 120);
 }
 
 .main_button {
-    background-color: rgb(220, 220, 220);
+    background-color: var(--btn-bg-color);
     border: 15px solid rgb(50, 50, 50);
     width: var(--btnsize);
     height: var(--btnsize);
-    font-size: 100px;
+    font-size: 125px;
 }
