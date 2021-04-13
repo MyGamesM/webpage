@@ -1,55 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: Poppins;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Poppins;
 }
 
 :root {
-    --bg-color: rgb(80, 80, 80);
-    --top-nav-color: rgb(100, 100, 100);
-    --max-places: 3;
-    --button-size: 200px;
-    --btn-bg-color: rgb(220, 220, 220);
+  --bg-color: rgb(80, 80, 80);
+  --top-nav-color: rgb(100, 100, 100);
+  --max-places: 3;
+  --button-size: 10vw;
+  --btn-bg-color: rgb(220, 220, 220);
 }
 
 body {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .main {
-    /* background-color: rgb(100, 100, 100); */
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .topnav {
-    background-color: var(--top-nav-color);
-    padding-bottom: 20px;
+  background-color: var(--top-nav-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .topnav a {
-    color: rgb(0, 128, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  background-color: #969696;
+  color: #0080ff;
+  margin-left: 25px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5vw;
+  border-radius: 25px;
 }
 
 .buttons {
-    background-color: rgb(120, 120, 120);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(var(--max-places), var(--button-size));
-    grid-template-rows: repeat(var(--max-places), var(--button-size));
+  background-color: #787878;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (var(--button-size))[var];
+      grid-template-columns: repeat(var(--max-places), var(--button-size));
+  -ms-grid-rows: (var(--button-size))[var];
+      grid-template-rows: repeat(var(--max-places), var(--button-size));
 }
 
 .main_button {
-    background-color: var(--btn-bg-color);
-    border: 15px solid rgb(50, 50, 50);
-    width: var(--btnsize);
-    height: var(--btnsize);
-    font-size: 125px;
+  background-color: var(--btn-bg-color);
+  border: 0.9vw solid #323232;
+  width: var(--btnsize);
+  height: var(--btnsize);
+  font-size: 7vw;
 }
+/*# sourceMappingURL=styles.css.map */

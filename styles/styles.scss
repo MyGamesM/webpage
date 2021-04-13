@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+:root {
+    --bg-color: rgb(80, 80, 80);
+    --top-nav-color: rgb(100, 100, 100);
+    --max-places: 3;
+    --button-size: 10vw;
+    --btn-bg-color: rgb(220, 220, 220);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.main {
+    // background-color: rgb(100, 100, 100);
+    background-color: var(--bg-color);
+}
+
+.topnav {
+    background-color: var(--top-nav-color);
+    display: flex;
+}
+
+.topnav a {
+    background-color: rgb(150, 150, 150);
+    color: rgb(0, 128, 255);
+    margin-left: 25px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 25px;
+}
+
+.buttons {
+    background-color: rgb(120, 120, 120);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(var(--max-places), var(--button-size));
+    grid-template-rows: repeat(var(--max-places), var(--button-size));
+}
+
+.main_button {
+    background-color: var(--btn-bg-color);
+    border: .9vw solid rgb(50, 50, 50);
+    width: var(--btnsize);
+    height: var(--btnsize);
+    font-size: 7vw;
+}
