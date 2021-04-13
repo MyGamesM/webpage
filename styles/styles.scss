@@ -24,12 +24,20 @@ body {
     background-color: var(--bg-color);
 }
 
-.topnav {
+.nav {
     background-color: var(--top-nav-color);
     display: flex;
 }
 
-.topnav a {
+.nav img {
+    margin-left: 1vw;
+    margin-bottom: .5vw;
+    --x: 3.5vw;
+    width: var(--x);
+    height: var(--x);
+}
+
+.nav a {
     background-color: rgb(150, 150, 150);
     color: rgb(0, 128, 255);
     margin-left: 25px;

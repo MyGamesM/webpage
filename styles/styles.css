@@ -22,14 +22,22 @@ body {
   background-color: var(--bg-color);
 }
 
-.topnav {
+.nav {
   background-color: var(--top-nav-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.topnav a {
+.nav img {
+  margin-left: 1vw;
+  margin-bottom: .5vw;
+  --x: 3.5vw;
+  width: var(--x);
+  height: var(--x);
+}
+
+.nav a {
   background-color: #969696;
   color: #0080ff;
   margin-left: 25px;
