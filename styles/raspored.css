@@ -9,6 +9,7 @@
 :root {
   --bg-color: rgb(80, 80, 80);
   --top-nav-color: rgb(100, 100, 100);
+  --rows: 3;
 }
 
 html {
@@ -44,4 +45,18 @@ html {
   font-size: 1.5vw;
   border-radius: 25px;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.raspored {
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (15vw)[var];
+      grid-template-columns: repeat(var(--rows), 15vw);
+}
+
+.item {
+  padding: 15px;
+  border: .9vw solid #000;
+  font-size: 2vw;
+}
+/*# sourceMappingURL=raspored.css.map */

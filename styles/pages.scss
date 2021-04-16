@@ -10,14 +10,12 @@
 :root {
     --bg-color: rgb(80, 80, 80);
     --top-nav-color: rgb(100, 100, 100);
+    --max-places: 3;
+    --button-size: 10vw;
+    --btn-bg-color: rgb(220, 220, 220);
 }
 
 html {
-    background-color: var(--bg-color);
-}
-
-.main {
-    // background-color: rgb(100, 100, 100);
     background-color: var(--bg-color);
 }
 
@@ -43,4 +41,19 @@ html {
     text-decoration: none;
     font-size: 1.5vw;
     border-radius: 25px;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(var(--max-places), var(--button-size));
+    grid-template-rows: repeat(var(--max-places), var(--button-size));
+}
+
+.main_button {
+    background-color: var(--btn-bg-color);
+    border: .9vw solid rgb(50, 50, 50);
+    width: var(--btnsize);
+    height: var(--btnsize);
+    font-size: 7vw;
 }

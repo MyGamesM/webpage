@@ -10,6 +10,7 @@
 :root {
     --bg-color: rgb(80, 80, 80);
     --top-nav-color: rgb(100, 100, 100);
+    --rows: 3;
 }
 
 html {
@@ -43,4 +44,16 @@ html {
     text-decoration: none;
     font-size: 1.5vw;
     border-radius: 25px;
+}
+
+.raspored {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(var(--rows), 15vw);
+}
+
+.item {
+    padding: 15px;
+    border: .9vw solid #000;
+    font-size: 2vw;
 }
