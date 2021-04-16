@@ -12,6 +12,7 @@
   --max-places: 3;
   --button-size: 10vw;
   --btn-bg-color: rgb(220, 220, 220);
+  --btn-border-color: rgb(50, 50, 50);
 }
 
 html {
@@ -62,5 +63,13 @@ html {
   width: var(--btnsize);
   height: var(--btnsize);
   font-size: 7vw;
+}
+
+.raspored {
+  font-size: 1.7vw;
+}
+
+.raspored p {
+  font-size: 3vw;
 }
 /*# sourceMappingURL=pages.css.map */

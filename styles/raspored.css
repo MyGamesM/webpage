@@ -10,6 +10,8 @@
   --bg-color: rgb(80, 80, 80);
   --top-nav-color: rgb(100, 100, 100);
   --rows: 3;
+  --btn-bg-color: rgb(220, 220, 220);
+  --btn-border-color: rgb(50, 50, 50);
 }
 
 html {
@@ -47,16 +49,23 @@ html {
 }
 
 .raspored {
-  background-color: #fff;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: (15vw)[var];
       grid-template-columns: repeat(var(--rows), 15vw);
 }
 
-.item {
+.p {
+  background-color: var(--btn-bg-color);
   padding: 15px;
-  border: .9vw solid #000;
+  border: 0.9vw solid var(--btn-border-color);
   font-size: 2vw;
+  text-align: center;
 }
 /*# sourceMappingURL=raspored.css.map */
