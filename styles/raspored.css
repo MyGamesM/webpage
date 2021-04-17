@@ -68,4 +68,17 @@ html {
   font-size: 2vw;
   text-align: center;
 }
+
+.neradnidan {
+  background-color: #969696;
+  border: 0.9vw solid var(--btn-border-color);
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.nrdh1 {
+  color: #646464;
+  text-align: center;
+}
 /*# sourceMappingURL=raspored.css.map */

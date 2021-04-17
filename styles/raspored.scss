@@ -62,3 +62,15 @@ html {
     font-size: 2vw;
     text-align: center;
 }
+
+.neradnidan {
+    background-color: rgb(150, 150, 150);
+    border: .9vw solid var(--btn-border-color);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nrdh1 {
+    color: rgb(100, 100, 100);
+    text-align: center;
+}
