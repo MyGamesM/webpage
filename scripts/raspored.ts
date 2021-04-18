@@ -7,7 +7,7 @@ var loet = ["09:05", "09:40", "10:25", "11:00", "11:35", "12:10", "12:45"]
 function fillin(x:number) {
     togglevisible(x);
 
-    if (x < 0 || x > 5) return;
+    if (x < 1 || x > 6) return;
     
     for (let i = 0; i < loc[n-1].length; i++) {
         document.getElementById(`p${i+1}`).innerHTML = loc[n-1][i];
@@ -18,6 +18,12 @@ function fillin(x:number) {
 
 function togglevisible(a:number) {
     let x:string = "";
+
+    if (a != 0 && a != 6) {
+        var element = document.getElementById("ne");
+        if (element.style.display === "none") element.style.display = "block";
+        else element.style.display = "none";
+    }
 
     if (a == 0 || a == 6) {
         for (let i = 0; i < 3; i++) {
@@ -37,12 +43,8 @@ function togglevisible(a:number) {
             
             for (let j = 0; j < 7; j++) {
                 var element = document.getElementById(`${x}${j+1}`);
-                if (element.style.display === "none") {
-                    element.style.display = "block";
-                }
-                else {
-                    element.style.display = "none";
-                }
+                if (element.style.display === "none") element.style.display = "block";
+                else element.style.display = "none";
             }
         }
     }
