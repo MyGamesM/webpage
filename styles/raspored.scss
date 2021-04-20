@@ -5,6 +5,7 @@
     margin: 0;
     border: 0;
     font-family: Poppins;
+    overflow: none;
 }
 
 :root {
@@ -17,6 +18,12 @@
 
 html {
     background-color: var(--bg-color);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 .main {
@@ -73,4 +80,47 @@ html {
 .nrdh1 {
     color: rgb(100, 100, 100);
     text-align: center;
+}
+
+.sidebar {
+    background-color: var(--bg-color);
+    position: absolute;
+    transform: translateX(-100%);
+    left: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebutton {
+    background-color: var(--btn-bg-color);
+    border: .9vw solid var(--btn-border-color);
+    font-size: 1vw;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+    .raspored {
+        grid-template-columns: repeat(var(--rows), 1fr);
+    }
+
+    .p {
+        font-size: 6vw;
+    }
+
+    .sidebar {
+        display: grid;
+        position: absolute;
+        bottom: 10vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .sidebutton {
+        font-size: 5vw;
+    }
+
+    .auto {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }

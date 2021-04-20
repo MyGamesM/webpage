@@ -4,6 +4,7 @@
   margin: 0;
   border: 0;
   font-family: Poppins;
+  overflow: none;
 }
 
 :root {
@@ -16,6 +17,12 @@
 
 html {
   background-color: var(--bg-color);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .main {
@@ -80,5 +87,55 @@ html {
 .nrdh1 {
   color: #646464;
   text-align: center;
+}
+
+.sidebar {
+  background-color: var(--bg-color);
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  left: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebutton {
+  background-color: var(--btn-bg-color);
+  border: 0.9vw solid var(--btn-border-color);
+  font-size: 1vw;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .raspored {
+    -ms-grid-columns: (1fr)[var];
+        grid-template-columns: repeat(var(--rows), 1fr);
+  }
+  .p {
+    font-size: 6vw;
+  }
+  .sidebar {
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    bottom: 10vw;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .sidebutton {
+    font-size: 5vw;
+  }
+  .auto {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
 /*# sourceMappingURL=raspored.css.map */
