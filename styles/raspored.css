@@ -111,31 +111,29 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 600px) {
   .raspored {
     -ms-grid-columns: (1fr)[var];
         grid-template-columns: repeat(var(--rows), 1fr);
   }
   .p {
-    font-size: 6vw;
+    font-size: 7vw;
+  }
+  .neradnidan {
+    font-size: 10vw;
+    border: 5vw solid var(--btn-border-color);
   }
   .sidebar {
     display: -ms-grid;
     display: grid;
-    position: absolute;
-    bottom: 10vw;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+    bottom: 0;
   }
   .sidebutton {
     font-size: 5vw;
-  }
-  .auto {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
+    min-width: 33.33vw;
   }
 }
 /*# sourceMappingURL=raspored.css.map */

@@ -73,6 +73,10 @@ function togglevisible(a:number) {
 
 function day(day:number) {
     if (day == 7) day = new Date().getDay();
+    if (day == 8) {
+        if (new Date().getDay() == 5) day = 1;
+        else day = new Date().getDay() +1;
+    }
     fillin(day, loc, lost, loet);
 }
 
@@ -81,4 +85,4 @@ fillin(n, loc, lost, loet)
 // getComputedStyle(document.documentElement)
 //     .getPropertyValue('--my-variable-name');
 // document.documentElement.style
-//     .setProperty('--my-variable-name', 'pink');
+//     .setProperty('--my-variable-name', 'blue');

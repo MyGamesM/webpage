@@ -98,29 +98,30 @@ body {
     text-align: center;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 600px) {
     .raspored {
         grid-template-columns: repeat(var(--rows), 1fr);
     }
 
     .p {
-        font-size: 6vw;
+        font-size: 7vw;
+    }
+
+    .neradnidan {
+        font-size: 10vw;
+        border: 5vw solid var(--btn-border-color);
     }
 
     .sidebar {
         display: grid;
-        position: absolute;
-        bottom: 10vw;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: row;
+        bottom: 0;
     }
 
     .sidebutton {
         font-size: 5vw;
-    }
-
-    .auto {
-        grid-column-start: 1;
-        grid-column-end: 4;
+        min-width: 33.33vw;
     }
 }
