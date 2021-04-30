@@ -17,30 +17,52 @@ html {
 }
 
 .main {
-    // background-color: rgb(100, 100, 100);
     background-color: var(--bg-color);
 }
 
 .nav {
-    background-color: var(--top-nav-color);
     display: flex;
+    background-color: var(--top-nav-color);
+
+    .navimg {
+        margin-left: 1.5vw;
+        margin-bottom: .5vw;
+        --x: 10vw;
+        width: var(--x);
+        height: var(--x);
+    }
+
+    .navitem {
+        background-color: rgb(150, 150, 150);
+        color: rgb(0, 128, 255);
+        margin-left: 25px;
+        padding: 2vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 4vw;
+        border-radius: 25px;
+    }
 }
 
-.nav img {
-    margin-left: 1vw;
-    margin-bottom: .5vw;
-    --x: 3.5vw;
-    width: var(--x);
-    height: var(--x);
-}
+@media screen and (min-width: 750px) {
+    .nav {
+        .navimg {
+            margin-left: 1.5vw;
+            margin-bottom: .5vw;
+            --x: 3.5vw;
+            width: var(--x);
+            height: var(--x);
+        }
 
-.nav a {
-    background-color: rgb(150, 150, 150);
-    color: rgb(0, 128, 255);
-    margin-left: 25px;
-    padding: 16px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5vw;
-    border-radius: 25px;
+        .navitem {
+            background-color: rgb(150, 150, 150);
+            color: rgb(0, 128, 255);
+            margin-left: 25px;
+            padding: 1vw;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5vw;
+            border-radius: 25px;        
+        }
+    }
 }

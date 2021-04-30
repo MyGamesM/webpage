@@ -100,12 +100,13 @@ html {
     }
 
     .sidebar {
+        background-color: var(--bg-color);
         display: flex;
         flex-direction: column;
         position: absolute;
         transform: translateX(-100%);
         left: 100vw;
-        background-color: var(--bg-color);
+        bottom: auto;
     
         .sidebutton {
             background-color: var(--btn-bg-color);

@@ -20,28 +20,48 @@ html {
 }
 
 .nav {
-  background-color: var(--top-nav-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: var(--top-nav-color);
 }
 
-.nav img {
-  margin-left: 1vw;
+.nav .navimg {
+  margin-left: 1.5vw;
   margin-bottom: .5vw;
-  --x: 3.5vw;
+  --x: 10vw;
   width: var(--x);
   height: var(--x);
 }
 
-.nav a {
+.nav .navitem {
   background-color: #969696;
   color: #0080ff;
   margin-left: 25px;
-  padding: 16px;
+  padding: 2vw;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 4vw;
   border-radius: 25px;
+}
+
+@media screen and (min-width: 750px) {
+  .nav .navimg {
+    margin-left: 1.5vw;
+    margin-bottom: .5vw;
+    --x: 3.5vw;
+    width: var(--x);
+    height: var(--x);
+  }
+  .nav .navitem {
+    background-color: #969696;
+    color: #0080ff;
+    margin-left: 25px;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 25px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

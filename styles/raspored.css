@@ -106,6 +106,7 @@ html {
     border-radius: 25px;
   }
   .sidebar {
+    background-color: var(--bg-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -117,7 +118,7 @@ html {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     left: 100vw;
-    background-color: var(--bg-color);
+    bottom: auto;
   }
   .sidebar .sidebutton {
     background-color: var(--btn-bg-color);
