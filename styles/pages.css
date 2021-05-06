@@ -1,118 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
 }
 
 :root {
-  --bg-color: rgb(80, 80, 80);
-  --top-nav-color: rgb(100, 100, 100);
-  --max-places: 3;
-  --btn-bg-color: rgb(220, 220, 220);
-  --btn-border-color: rgb(50, 50, 50);
+    --bg-color: rgb(80, 80, 80);
+    --top-nav-color: rgb(100, 100, 100);
+    --btn-bg-color: rgb(220, 220, 220);
+    --btn-border-color: rgb(50, 50, 50);
 }
 
 html {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .nav {
-  background-color: var(--top-nav-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    background-color: var(--top-nav-color);
+    display: flex;
 }
 
-.nav .navimg {
-  margin-left: 1.5vw;
-  margin-bottom: .5vw;
-  --x: 10vw;
-  width: var(--x);
-  height: var(--x);
-}
-
-.nav .navitem {
-  background-color: #969696;
-  color: #0080ff;
-  margin-left: 25px;
-  padding: 2vw;
-  text-align: center;
-  text-decoration: none;
-  font-size: 4vw;
-  border-radius: 25px;
-}
-
-.buttons {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  --button-size: 25vw;
-  -ms-grid-columns: (var(--button-size))[var];
-      grid-template-columns: repeat(var(--max-places), var(--button-size));
-  -ms-grid-rows: (var(--button-size))[var];
-      grid-template-rows: repeat(var(--max-places), var(--button-size));
-}
-
-.buttons .main_button {
-  background-color: var(--btn-bg-color);
-  border: 2vw solid #323232;
-  font-size: 20vw;
-  text-align: center;
-}
-
-.buttons .main_button .b1p1 {
-  font-size: 10vw;
-}
-
-.buttons .main_button .b1p2 {
-  font-size: 4.8vw;
-}
-
-@media screen and (min-width: 750px) {
-  .nav .navimg {
+.navimg {
     margin-left: 1.5vw;
     margin-bottom: .5vw;
-    --x: 3.5vw;
-    width: var(--x);
-    height: var(--x);
-  }
-  .nav .navitem {
-    background-color: #969696;
-    color: #0080ff;
-    margin-left: 25px;
-    padding: 1vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+.navitem {
+    background-color: rgb(150, 150, 150);
+    color: rgb(0, 128, 255);
+    margin-left: 10px;
+    padding: 2vw;
     text-align: center;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 4vw;
     border-radius: 25px;
-  }
-  .buttons {
-    display: -ms-grid;
+}   
+
+.buttons {
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    --button-size: 12.5vw;
-    -ms-grid-columns: (var(--button-size))[var];
-        grid-template-columns: repeat(var(--max-places), var(--button-size));
-    -ms-grid-rows: (var(--button-size))[var];
-        grid-template-rows: repeat(var(--max-places), var(--button-size));
-  }
-  .buttons .main_button {
-    background-color: var(--btn-bg-color);
-    border: 1vw solid #323232;
-    font-size: 8vw;
-    text-align: center;
-  }
-  .buttons .main_button .b1p1 {
-    font-size: 5vw;
-  }
-  .buttons .main_button .b1p2 {
-    font-size: 2vw;
-  }
+    justify-content: center;
+    --button-size: 25vw;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
 }
-/*# sourceMappingURL=pages.css.map */
+
+.main_button {
+    background-color: var(--btn-bg-color);
+    border: 2vw solid rgb(50, 50, 50);
+    font-size: 20vw;
+    text-align: center;
+}
+
+.b1p1 { font-size: 10vw; }
+.b1p2 { font-size: 4vw; }
+.b2p1 { font-size: 10vw; }
+.b2p2 { font-size: 5vw; }
+
+@media screen and (min-width: 300px) {
+    .navimg {
+        margin-left: 1.5vw;
+        margin-bottom: .5vw;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    
+    .navitem {
+        background-color: rgb(150, 150, 150);
+        color: rgb(0, 128, 255);
+        margin-left: 10px;
+        padding: 1vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5vw;
+        border-radius: 25px;        
+    }
+    
+    .buttons {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 12.5vw);
+        grid-template-rows: repeat(3, 12.5vw);
+    }
+    
+    .main_button {
+        background-color: var(--btn-bg-color);
+        border: 1vw solid rgb(50, 50, 50);
+        font-size: 8vw;
+        text-align: center;
+    }
+    
+    .b1p1 { font-size: 5vw; }
+    .b1p2 { font-size: 2vw; }
+    .b2p1 { font-size: 5vw; }
+    .b2p2 { font-size: 2.5vw; }
+}

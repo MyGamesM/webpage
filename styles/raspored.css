@@ -1,155 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-family: Poppins;
-  overflow: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
+    overflow: none;
 }
 
 :root {
-  --bg-color: rgb(80, 80, 80);
-  --top-nav-color: rgb(100, 100, 100);
-  --btn-bg-color: rgb(220, 220, 220);
-  --btn-border-color: rgb(50, 50, 50);
-  --y: 3;
+    --bg-color: rgb(80, 80, 80);
+    --top-nav-color: rgb(100, 100, 100);
+    --btn-bg-color: rgb(220, 220, 220);
+    --btn-border-color: rgb(50, 50, 50);
 }
 
 html {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--top-nav-color);
+    display: flex;
+    background-color: var(--top-nav-color);
 }
 
-.nav .navimg {
-  margin-left: 1.5vw;
-  margin-bottom: .5vw;
-  --x: 10vw;
-  width: var(--x);
-  height: var(--x);
+.navimg {
+    margin-left: 1.5vw;
+    margin-bottom: .5vw;
+    width: 10vw;
+    height: 10vw;
 }
 
-.nav .navitem {
-  background-color: #969696;
-  color: #0080ff;
-  margin-left: 25px;
-  padding: 2vw;
-  text-align: center;
-  text-decoration: none;
-  font-size: 4vw;
-  border-radius: 25px;
+.navitem {
+    background-color: #969696;
+    color: #0080ff;
+    margin-left: 10px;
+    padding: 2vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vw;
+    border-radius: 25px;
 }
 
 .sidebar {
-  display: -ms-grid;
-  display: grid;
-  position: absolute;
-  -ms-grid-columns: (1fr)[var];
-      grid-template-columns: repeat(var(--y), 1fr);
-  -ms-grid-rows: (1fr)[var];
-      grid-template-rows: repeat(var(--y), 1fr);
-  bottom: 0;
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    bottom: 0;
 }
 
-.sidebar .sidebutton {
-  background-color: var(--btn-bg-color);
-  border: 2vw solid var(--btn-border-color);
-  font-size: 5vw;
+.sidebutton {
+    background-color: var(--btn-bg-color);
+    border: 2vw solid var(--btn-border-color);
+    font-size: 5vw;
 }
 
 .raspored {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: (1fr)[var];
-      grid-template-columns: repeat(var(--y), 1fr);
-  font-size: 5vw;
-  text-align: center;
-}
-
-.raspored .p {
-  background-color: var(--btn-bg-color);
-  border: 2vw solid var(--btn-border-color);
-}
-
-.raspored .neradnidan {
-  background-color: #969696;
-  border: 3vw solid var(--btn-border-color);
-}
-
-@media screen and (min-width: 750px) {
-  .nav .navimg {
-    margin-left: 1.5vw;
-    margin-bottom: .5vw;
-    --x: 3.5vw;
-    width: var(--x);
-    height: var(--x);
-  }
-  .nav .navitem {
-    background-color: #969696;
-    color: #0080ff;
-    margin-left: 25px;
-    padding: 1vw;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5vw;
-    border-radius: 25px;
-  }
-  .sidebar {
-    background-color: var(--bg-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    left: 100vw;
-    bottom: auto;
-  }
-  .sidebar .sidebutton {
-    background-color: var(--btn-bg-color);
-    border: 0.9vw solid var(--btn-border-color);
-    font-size: 2vw;
-    text-align: center;
-  }
-  .raspored {
-    display: -ms-grid;
     display: grid;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: (15vw)[var];
-        grid-template-columns: repeat(var(--y), 15vw);
-    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 5vw;
     text-align: center;
-  }
-  .raspored .p {
+}
+
+.p {
     background-color: var(--btn-bg-color);
-    border: 1vw solid var(--btn-border-color);
-  }
-  .raspored .neradnidan {
+    border: 2vw solid var(--btn-border-color);
+}
+
+.neradnidan {
     background-color: #969696;
     border: 3vw solid var(--btn-border-color);
-    -ms-grid-column: 1;
+}
+
+@media screen and (min-width: 300px) {
+    .p {
+        border: 1vw solid var(--btn-border-color);
+        background-color: var(--btn-bg-color);
+    }
+
+    .navimg {
+        margin-left: 1.5vw;
+        margin-bottom: .5vw;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .navitem {
+        background-color: #969696;
+        color: #0080ff;
+        margin-left: 10px;
+        padding: 1vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5vw;
+        border-radius: 25px;
+    }
+
+    .sidebar {
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transform: translateX(-100%);
+        left: 100vw;
+        bottom: auto;
+    }
+
+    .sidebutton {
+        background-color: var(--btn-bg-color);
+        border: 0.9vw solid var(--btn-border-color);
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .raspored {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 15vw);
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .neradnidan {
+        background-color: #969696;
+        border: 3vw solid var(--btn-border-color);
         grid-column-start: 1;
-    grid-column-end: 4;
-  }
+        grid-column-end: 4;
+    }
 }
 /*# sourceMappingURL=raspored.css.map */
