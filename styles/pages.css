@@ -61,7 +61,7 @@ html {
 .b2p1 { font-size: 10vw; }
 .b2p2 { font-size: 5vw; }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 430px) {
     .navimg {
         margin-left: 1.5vw;
         margin-bottom: .5vw;

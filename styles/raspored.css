@@ -72,9 +72,11 @@ html {
 .neradnidan {
     background-color: #969696;
     border: 3vw solid var(--btn-border-color);
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 430px) {
     .p {
         border: 1vw solid var(--btn-border-color);
         background-color: var(--btn-bg-color);

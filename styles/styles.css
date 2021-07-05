@@ -42,7 +42,7 @@ html {
     border-radius: 25px;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 430px) {
     .navimg {
         margin-left: 1.5vw;
         margin-bottom: .5vw;

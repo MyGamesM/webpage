@@ -13,6 +13,7 @@
     --top-nav-color: rgb(100, 100, 100);
     --btn-bg-color: rgb(220, 220, 220);
     --btn-border-color: rgb(50, 50, 50);
+    --sellplace-bg: rgb(175, 175, 175);
 }
 
 html { background-color: var(--bg-color); }
@@ -64,11 +65,39 @@ html { background-color: var(--bg-color); }
 
 .x {
     grid-area: X;
-    background-color: var(--btn-bg-color);
 }
 .y { grid-area: Y; }
 .money { grid-area: Coin; }
 .bread { grid-area: Bread; }
+
+.infobox {
+    position: absolute;
+    left: 100vw;
+    transform: translate(-103%, -80%);
+    display: grid;
+    grid-template-columns: 15vw;
+    grid-template-rows: 5vw;
+    grid-template-areas: 
+        "main"
+        "second"
+        "submit";
+    text-align: center;
+}
+
+.infomaintext {
+    background-color: var(--btn-bg-color);
+    grid-area: main;
+}
+
+.infosecondtext {
+    background-color: var(--btn-bg-color);
+    grid-area: second;
+}
+
+.infosubmitbutton {
+    background-color: var(--btn-bg-color);
+    grid-area: submit;
+}
 
 .maingrid {
     display: grid;
@@ -78,6 +107,10 @@ html { background-color: var(--bg-color); }
     grid-template-columns: repeat(4, 8vw);
     grid-template-rows: repeat(4, 8vw);
     justify-content: center;
+}
+
+.btn {
+    background-color: var(--sellplace-bg);
 }
 
 .btnimg {
