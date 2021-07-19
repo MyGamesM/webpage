@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
+    --dark: hsl(200, 5%, 40%);
+    font-weight: bold;
+}
+
+html { background-color: hsl(200, 5%, 50%); }
+
+.main {
+    display: grid;
+    justify-content: center;
+}
+
+h1 { font-size: 50px; }
+h2 { font-size: 35px; }
+th { font-size: 20px; }
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.naming { animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+.primitiveTypes { animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+.arithmeticOperators { animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+.arithmeticOperators2 { animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+.comparisonOperators {animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+.logicalOperators { animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+.bitwiseOperations { animation-name: lighten; animation-duration: 1s; animation-fill-mode: forwards; }
+
+.naming:hover { animation-name: darken; }
+.primitiveTypes:hover { animation-name: darken; }
+.arithmeticOperators:hover { animation-name: darken; }
+.arithmeticOperators2:hover { animation-name: darken; }
+.comparisonOperators:hover { animation-name: darken; }
+.logicalOperators:hover { animation-name: darken; }
+.bitwiseOperations:hover { animation-name: darken; }
+
+@keyframes darken {
+    from { background-color: var(--normal); }
+    to { background-color: var(--dark); }
+}
+
+@keyframes lighten {
+    from { background-color: var(--dark); }
+    to { background-color: var(--normal); }
+}
