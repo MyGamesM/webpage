@@ -1,9 +1,10 @@
 var n = new Date().getDay();
-var loc = [['Matematika', 'Biologija', 'Fizizka', 'Srpski', 'Muzicko', 'Nemacki', 'Odeljenska'], ['Srpski', 'Fizicko', 'Matematika', 'Hemija', 'Istorija', 'Biologija'], ['Fizika', 'Engleski', 'Srpski', 'Hemija', 'Istorija', 'Fizicko'], ['Likovno', 'Geografija', 'Nemacki', 'Srpski', 'Matematika', 'Engleski'], ['Informatika', 'Matematika', 'TIT', 'TIT', 'Geografija', 'Fizicko']];
-var lost = ['08:35', '09:10', '09:55', '10:30', '11:05', '11:40', '12:15'];
-var loet = ["09:05", "09:40", "10:25", "11:00", "11:35", "12:10", "12:45"];
-function fillin(x, classes, timestart, timeend) {
-    togglevisible(x);
+//var loc = [['Matematika', 'Biologija', 'Fizizka', 'Srpski', 'Muzicko', 'Nemacki', 'Odeljenska'], ['Srpski', 'Fizicko', 'Matematika', 'Hemija', 'Istorija', 'Biologija'], ['Fizika', 'Engleski', 'Srpski', 'Hemija', 'Istorija', 'Fizicko'], ['Likovno', 'Geografija', 'Nemacki', 'Srpski', 'Matematika', 'Engleski'], ['Informatika', 'Matematika', 'TIT', 'TIT', 'Geografija', 'Fizicko']];
+var loc = [["RG/Praksa", "RG/Praksa", "Matematika", "Likovno", "Srpski", "OET/Null"], ["Fizicko", "Fizika", "Praksa/Prog", "Praksa/Prog", "Engleski", "Null/RiI", "Null/RiI"], ["Istorija", "Hemija", "OET", "Srpski", "Geografija", "RiI/Null", "RiI/Null"], ["Geografija", "OET", "Matematika", "Engleski", "Srpski", "Hemija", "Fizika"], ["Matematika", "Istorija", "Fizicko", "OET", "Prog/OET", "Prog/Grafika", "Null/Grafika"]];
+var lost = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
+var loet = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
+function fillin(x, classes /*, timestart:string[], timeend:string[]*/) {
+    togglevisible(x, classes);
     if (x < 1 || x > 5)
         return;
     for (let i = 0; i < loc[x - 1].length; i++) {
@@ -12,42 +13,14 @@ function fillin(x, classes, timestart, timeend) {
         document.getElementById(`b${i + 1}`).innerHTML = loet[i];
     }
 }
-function togglevisible(a) {
-    let x = "";
+function togglevisible(a, b) {
     var element = "";
+    // za neradne dane
     if (a == 0 || a == 6) {
         element = document.getElementById("ne");
         if (element.style.display === "none")
             element.style.display = "block";
-    }
-    else if (a > 0 && a < 6) {
-        element = document.getElementById("ne");
-        if (element.style.display !== "none")
-            element.style.display = "none";
-    }
-    if (a != 1) {
-        element = document.getElementById("a7");
-        if (element.style.display !== "none")
-            element.style.display = "none";
-        element = document.getElementById("b7");
-        if (element.style.display !== "none")
-            element.style.display = "none";
-        element = document.getElementById("p7");
-        if (element.style.display !== "none")
-            element.style.display = "none";
-    }
-    else if (a == 1) {
-        element = document.getElementById("a7");
-        if (element.style.display === "none")
-            element.style.display = "block";
-        element = document.getElementById("b7");
-        if (element.style.display === "none")
-            element.style.display = "block";
-        element = document.getElementById("p7");
-        if (element.style.display === "none")
-            element.style.display = "block";
-    }
-    if (a == 0 || a == 6) {
+        // show all
         for (let i = 0; i < 3; i++) {
             for (let j = 0; j < 7; j++) {
                 element = document.getElementById(`a${j + 1}`);
@@ -63,13 +36,12 @@ function togglevisible(a) {
         }
     }
     else if (a > 0 && a < 6) {
-        let y;
-        if (a == 1)
-            y = 7;
-        else
-            y = 6;
+        element = document.getElementById("ne");
+        if (element.style.display !== "none")
+            element.style.display = "none";
+        // hide all
         for (let i = 0; i < 3; i++) {
-            for (let j = 0; j < y; j++) {
+            for (let j = 0; j < 7; j++) {
                 element = document.getElementById(`a${j + 1}`);
                 if (element.style.display === "none")
                     element.style.display = "block";
@@ -82,6 +54,31 @@ function togglevisible(a) {
             }
         }
     }
+    // hide 7 class
+    if (b[a - 1] != undefined) {
+        if (b[a - 1].length < 7) {
+            element = document.getElementById("a7");
+            element.style.display = "none";
+            element = document.getElementById("b7");
+            element.style.display = "none";
+            element = document.getElementById("p7");
+            element.style.display = "none";
+        }
+        else {
+            element = document.getElementById("a7");
+            element.style.display = "block";
+            element = document.getElementById("b7");
+            element.style.display = "block";
+            element = document.getElementById("p7");
+            element.style.display = "block";
+        }
+        /* if (element.style.display !== "none") */
+        /* if (element.style.display !== "none") */
+        /* if (element.style.display !== "none") */
+        /* if (element.style.display !== "none") */
+        /* if (element.style.display !== "none") */
+        /* if (element.style.display !== "none") */
+    }
 }
 function day(day) {
     if (day == 7)
@@ -92,9 +89,9 @@ function day(day) {
         else
             day = new Date().getDay() + 1;
     }
-    fillin(day, loc, lost, loet);
+    fillin(day, loc);
 }
-fillin(n, loc, lost, loet);
+fillin(n, loc);
 // getComputedStyle(document.documentElement)
 //     .getPropertyValue('--my-variable-name');
 // document.documentElement.style
