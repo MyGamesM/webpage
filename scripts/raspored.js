@@ -1,6 +1,6 @@
 var n = new Date().getDay();
 //var loc = [['Matematika', 'Biologija', 'Fizizka', 'Srpski', 'Muzicko', 'Nemacki', 'Odeljenska'], ['Srpski', 'Fizicko', 'Matematika', 'Hemija', 'Istorija', 'Biologija'], ['Fizika', 'Engleski', 'Srpski', 'Hemija', 'Istorija', 'Fizicko'], ['Likovno', 'Geografija', 'Nemacki', 'Srpski', 'Matematika', 'Engleski'], ['Informatika', 'Matematika', 'TIT', 'TIT', 'Geografija', 'Fizicko']];
-var loc = [["RG/Praksa", "RG/Praksa", "Matematika", "Likovno", "Srpski", "OET/Null"], ["Fizicko", "Fizika", "Praksa/Prog", "Praksa/Prog", "Engleski", "Null/RiI", "Null/RiI"], ["Istorija", "Hemija", "OET", "Srpski", "Geografija", "RiI/Null", "RiI/Null"], ["Geografija", "OET", "Matematika", "Engleski", "Srpski", "Hemija", "Fizika"], ["Matematika", "Istorija", "Fizicko", "OET", "Prog/OET", "Prog/Grafika", "Null/Grafika"]];
+var loc = [["Matematika", "Engleski", "Likovno", "Srpski", "OET", "Fizicko", "Verska"], ["Fizika", "Matematika", "Praksa/Prog", "Praksa/Prog", "Engleski", "Inform/OET", "Inform/Null"], ["Istorija", "Fizika", "Hemija", "Geografija", "OET", "Gradjan/Null", "Null/Gradjan"], ["Geografija", "Fizicko", "Srpski", "Srpski", "Praksa/RG", "Praksa/RG", "Hemija"], ["RG/Infrom", "RG/Infrom", "Istorija", "Matematika", "OET", "OET/Prog", "Null/Prog"]];
 var lost = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 var loet = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 function fillin(x, classes /*, timestart:string[], timeend:string[]*/) {
@@ -72,12 +72,6 @@ function togglevisible(a, b) {
             element = document.getElementById("p7");
             element.style.display = "block";
         }
-        /* if (element.style.display !== "none") */
-        /* if (element.style.display !== "none") */
-        /* if (element.style.display !== "none") */
-        /* if (element.style.display !== "none") */
-        /* if (element.style.display !== "none") */
-        /* if (element.style.display !== "none") */
     }
 }
 function day(day) {
