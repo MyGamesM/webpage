@@ -1,11 +1,11 @@
 var n = new Date().getDay();
 
 //var loc = [['Matematika', 'Biologija', 'Fizizka', 'Srpski', 'Muzicko', 'Nemacki', 'Odeljenska'], ['Srpski', 'Fizicko', 'Matematika', 'Hemija', 'Istorija', 'Biologija'], ['Fizika', 'Engleski', 'Srpski', 'Hemija', 'Istorija', 'Fizicko'], ['Likovno', 'Geografija', 'Nemacki', 'Srpski', 'Matematika', 'Engleski'], ['Informatika', 'Matematika', 'TIT', 'TIT', 'Geografija', 'Fizicko']];
-var loc = [["Srpski", "OET", "Likovno", "Matematika", "Engleski", "OET/Prog", "Null/Prog"], ["Fizicko", "Matematika", "Prog/Praksa", "Prog/Praksa", "Engleski", "Inform/OET", "Inform/Null"], ["Istorija", "Fizika", "Hemija", "Geografija", "OET", "Gradjan/Null", "Null/Gradjan"], ["Geografija", "Fizika", "Srpski", "Srpski", "Praksa/RG", "Praksa/RG", "Hemija"], ["RG/Inform", "RG/Inform", "Istorija", "OET", "Matematika", "Fizicko"]]
+var loc = [["Srpski", "Likovno", "OET", "Matematika", "Engleski", "OET/Prog", "Null/Prog"], ["Fizicko", "Matematika", "Prog/Praksa", "Prog/Praksa", "Engleski", "Inform/OET", "Inform/Null"], ["Istorija", "Fizika", "Hemija", "Geografija", "OET", "Gradjan/Verska"], ["Geografija", "Fizika", "Srpski", "Srpski", "Praksa/RG", "Praksa/RG", "Hemija"], ["RG/Inform", "RG/Inform", "Istorija", "OET", "Matematika", "Fizicko", "Gradjansko"]]
 var lost = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"]
 var loet = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"]
 
-function fillin(x:number, classes:string[][]/*, timestart:string[], timeend:string[]*/) {
+function fillin(x:number, classes:string[][]) {
     togglevisible(x, classes);
     if (x < 1 || x > 5) return;
     
