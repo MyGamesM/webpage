@@ -4,14 +4,17 @@
     margin: 0;
     border: 0;
     font-family: Poppins;
-    overflow: none;
 }
 
 :root {
-    --bg-color: rgb(80, 80, 80);
-    --top-nav-color: rgb(100, 100, 100);
-    --btn-bg-color: rgb(220, 220, 220);
-    --btn-border-color: rgb(50, 50, 50);
+    --bg-color: #505050;
+    --top-nav-color: #646464;
+    --btn-bg-color: #888;
+    --btn-hover-color: #aaa;
+    --btn-border-color: #323232;
+    --btn-border-color-hover: #444;
+    --sidebar-color: #aaa;
+    --sidebar-hover-color: #ccc;
 }
 
 html {
@@ -53,6 +56,7 @@ html {
     background-color: var(--btn-bg-color);
     border: 2vw solid var(--btn-border-color);
     font-size: 5vw;
+    transition: .5s;
 }
 
 .raspored {
@@ -70,10 +74,16 @@ html {
 }
 
 .neradnidan {
-    background-color: #969696;
+    background-color: var(--btn-bg-color);
     border: 3vw solid var(--btn-border-color);
     grid-column-start: 1;
     grid-column-end: 4;
+    transition: .5s;
+}
+
+.neradnidan:hover {
+    transform: scale(1.05);
+    background-color: var(--btn-hover-color);
 }
 
 @media screen and (min-width: 430px) {
@@ -132,5 +142,9 @@ html {
         grid-column-start: 1;
         grid-column-end: 4;
     }
+
+    .neradnidan:hover {
+        transform: scale(1.05);
+        background-color: var(--btn-hover-color);
+    }
 }
-/*# sourceMappingURL=raspored.css.map */

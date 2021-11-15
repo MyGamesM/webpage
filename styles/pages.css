@@ -8,11 +8,19 @@
 }
 
 :root {
-    --bg-color: rgb(80, 80, 80);
-    --top-nav-color: rgb(100, 100, 100);
-    --btn-bg-color: rgb(220, 220, 220);
-    --btn-border-color: rgb(50, 50, 50);
+    --bg-color: #505050;
+    --top-nav-color: #646464;
+    --btn-bg-color: #888;
+    --btn-hover-color: #aaa;
+    --btn-border-color: #323232;
+    --btn-border-color-hover: #444;
 }
+
+/*
+#313031 dark gray
+#8e8e8e light gray
+#92E897 lime
+*/
 
 html {
     background-color: var(--bg-color);
@@ -47,19 +55,28 @@ html {
     --button-size: 25vw;
     grid-template-columns: repeat(3, 25vw);
     grid-template-rows: repeat(3, 25vw);
+    grid-gap: 2vw;
 }
+
 
 .main_button {
     background-color: var(--btn-bg-color);
-    border: 2vw solid rgb(50, 50, 50);
-    font-size: 20vw;
+    border: 2vw solid var(--btn-border-color);
+    font-size: 18vw;
     text-align: center;
+    transition: .5s;
+}
+
+.main_button:hover {
+    background-color: var(--btn-hover-color);
+    border: 2vw solid var(--btn-border-color-hover);
+    transform: scale(1.05);
 }
 
 .b1p1 { font-size: 10vw; }
 .b1p2 { font-size: 4vw; }
-.b2p1 { font-size: 10vw; }
-.b2p2 { font-size: 5vw; }
+.b2p1 { font-size: 5vw; }
+.b2p2 { font-size: 2vw; }
 
 @media screen and (min-width: 430px) {
     .navimg {
@@ -85,17 +102,23 @@ html {
         justify-content: center;
         grid-template-columns: repeat(3, 12.5vw);
         grid-template-rows: repeat(3, 12.5vw);
+        grid-gap: 1vw;
     }
     
     .main_button {
         background-color: var(--btn-bg-color);
-        border: 1vw solid rgb(50, 50, 50);
+        border: 1vw solid var(--btn-border-color);
         font-size: 8vw;
         text-align: center;
+        transition: .5s;
+    }
+
+    .main_button:hover {
+        background-color: var(--btn-hover-color);
+        border: 1vw solid var(--btn-border-color-hover);
+        transform: scale(1.05);
     }
     
     .b1p1 { font-size: 5vw; }
     .b1p2 { font-size: 2vw; }
-    .b2p1 { font-size: 5vw; }
-    .b2p2 { font-size: 2.5vw; }
 }

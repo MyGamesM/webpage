@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+:root {
+    --bg-color: #505050;
+    --top-nav-color: #646464;
+    --btn-color: #888;
+    --btn-hover-color: #aaa;
+    --btn-border-color: #323232;
+    --btn-hover-border-color: #444;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+.nav {
+    background-color: var(--top-nav-color);
+    display: flex;
+}
+
+.navimg {
+    margin-left: 1vw;
+    margin-bottom: .2vw;
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+.navitem {
+    background-color: rgb(150, 150, 150);
+    color: rgb(0, 128, 255);
+    margin-left: 10px;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 25px;
+}
+
+.table {
+    display: grid;
+}
+
+.t {
+    background-color: #757575;
+    justify-self: center;
+}
+
+#t th {
+    width: 4vw;
+    height: 1vh;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #686868;
+}
+
+#t td {
+    width: 4vw;
+    height: 1vh;
+}
+
+#t tr:nth-child(even){
+    background-color: #686868;
+}
+
+#t tr:hover {
+    background-color: #666;
+}
+
+#t td, #t th {
+    border: 2px solid #000;
+    padding: 8px;
+    font-size: 1.4vw;
+}
