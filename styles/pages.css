@@ -46,7 +46,7 @@ html {
     text-align: center;
     text-decoration: none;
     font-size: 4vw;
-    border-radius: 25px;
+    border-radius: 15px;
 }   
 
 .buttons {
@@ -75,8 +75,8 @@ html {
 
 .b1p1 { font-size: 10vw; }
 .b1p2 { font-size: 4vw; }
-.b2p1 { font-size: 5vw; }
-.b2p2 { font-size: 2vw; }
+.b2p1 { font-size: 10vw; }
+.b2p2 { font-size: 5vw; }
 
 @media screen and (min-width: 430px) {
     .navimg {
@@ -121,4 +121,6 @@ html {
     
     .b1p1 { font-size: 5vw; }
     .b1p2 { font-size: 2vw; }
+    .b2p1 { font-size: 5vw; }
+    .b2p2 { font-size: 2vw; }
 }
