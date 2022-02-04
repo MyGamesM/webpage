@@ -1,7 +1,13 @@
 var n = new Date().getDay();
 
 //var loc = [['Matematika', 'Biologija', 'Fizizka', 'Srpski', 'Muzicko', 'Nemacki', 'Odeljenska'], ['Srpski', 'Fizicko', 'Matematika', 'Hemija', 'Istorija', 'Biologija'], ['Fizika', 'Engleski', 'Srpski', 'Hemija', 'Istorija', 'Fizicko'], ['Likovno', 'Geografija', 'Nemacki', 'Srpski', 'Matematika', 'Engleski'], ['Informatika', 'Matematika', 'TIT', 'TIT', 'Geografija', 'Fizicko']];
-var loc = [["Srpski", "Likovno", "OET", "Matematika", "Engleski", "OET"], ["Fizicko", "Matematika", "Program", "Program", "Engleski", "Inform", "Inform"], ["Istorija", "Fizika", "Hemija", "Geografija", "OET", "Gradjasko"], ["Geografija", "Fizika", "Srpski", "Srpski", "Praksa", "Praksa", "Hemija"], ["RacunarGraf", "RacunarGraf", "Istorija", "OET", "Matematika", "Fizicko", "Gradjansko"]]
+var loc = [
+	["Engleski", "OET", "Likovno", "Fizicko", "Matematika", "OET"],
+	["Hemija", "Istorija", "Program", "Program", "Engleski", "Inform", "Inform"],
+	["Matematika", "Fizika", "Hemija", "Geografija", "OET", "Gradjasko"],
+	["Fizika", "Fizicko", "Matematika", "Geografija", "Praksa", "Praksa", "Srpski"],
+	["RacunarGraf", "RacunarGraf", "Istorija", "OET", "Srpski", "Srpski"]
+]
 var lost = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"]
 var loet = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"]
 
