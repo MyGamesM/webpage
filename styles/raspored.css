@@ -64,7 +64,7 @@ html {
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 5vw;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -132,7 +132,7 @@ html {
         align-items: center;
         justify-content: center;
         grid-template-columns: repeat(3, 15vw);
-        font-size: 2vw;
+        font-size: 1.7vw;
         text-align: center;
     }
 
