@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+:root {
+    --bg-color: #505050;
+    --top-nav-color: #646464;
+    --btn-bg-color: #888;
+    --btn-hover-color: #aaa;
+    --btn-border-color: #323232;
+    --btn-border-color-hover: #444;
+    --sidebar-color: #aaa;
+    --sidebar-hover-color: #ccc;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+.nav {
+    display: flex;
+	position: sticky;
+	top: 0;
+    background-color: var(--top-nav-color);
+}
+
+.navimg {
+    margin-left: 1.5vw;
+    margin-bottom: .5vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+.navitem {
+    background-color: #969696;
+    color: #0080ff;
+    margin-left: 10px;
+    padding: 2vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vw;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 430px) {
+	.navimg {
+        margin-left: 1.5vw;
+        margin-bottom: .5vw;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    
+    .navitem {
+        background-color: rgb(150, 150, 150);
+        color: rgb(0, 128, 255);
+        margin-left: 10px;
+        padding: 1vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5vw;
+        border-radius: 25px;        
+    }
+
+	.middle {
+		background-color: #585858;
+		width: 65vw;
+		height: 100vh;
+		margin-left: 17.5vw;
+		display: grid;
+		grid-template-areas: 
+		'main1 main2 main3'
+		'pr1 pr2 pr3'
+		'pr5 pr4 pr6';
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.firstpart {
+		grid-area: main;
+		
+	}
+
+	
+}
