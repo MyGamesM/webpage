@@ -58,11 +58,12 @@ td:nth-child(2) {
 
 @media screen and (min-width: 430px) {
 	.table {
-		margin-left: 25vw;
+		margin-left: 27vw;
 	}
 
 	td {
-		font-size: calc((4vw + 2vh) / 2);
+		font-size: calc((2.5vw + 2.5vh) / 2);
+		border: var(--btn-border-color) solid 0.7vw;
 	}
 
 	td:nth-child(odd) {
@@ -70,7 +71,7 @@ td:nth-child(2) {
 	}
 	
 	td:nth-child(2) {
-		width: 25vw;
+		width: 20vw;
 	}
 
 	.buttons {
