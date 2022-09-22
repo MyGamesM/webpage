@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    background-color: var(--top-nav-color);
+}
+
+.navimg {
+    margin-left: 1.5vw;
+    margin-bottom: .5vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+.navitem {
+    background-color: #969696;
+    color: #0080ff;
+    margin-left: 10px;
+    padding: 2vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 5vw;
+    border-radius: calc((2.5vw + 2.5vh) / 2);
+}
+
+@media screen and (min-width: 430px) {
+    .navimg {
+        margin-left: 1.5vw;
+        margin-bottom: .5vw;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .navitem {
+        background-color: #969696;
+        color: #0080ff;
+        margin-left: 10px;
+        padding: 1vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5vw;
+        border-radius: 25px;
+    }
+}
