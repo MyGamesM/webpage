@@ -1,12 +1,14 @@
 var n = new Date().getDay();
 //var loc = [['Matematika', 'Biologija', 'Fizizka', 'Srpski', 'Muzicko', 'Nemacki', 'Odeljenska'], ['Srpski', 'Fizicko', 'Matematika', 'Hemija', 'Istorija', 'Biologija'], ['Fizika', 'Engleski', 'Srpski', 'Hemija', 'Istorija', 'Fizicko'], ['Likovno', 'Geografija', 'Nemacki', 'Srpski', 'Matematika', 'Engleski'], ['Informatika', 'Matematika', 'TIT', 'TIT', 'Geografija', 'Fizicko']];
-var loc = [
+
+let loc = [
     ["Elektronika 1", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka"],
-    ["Matematika", "Fizika", "Fizicko", "OET 2", "Biologija", "Engleski", "Gradjansko"],
-    ["Programiranje", "Programiranje", "Baze Podataka", "Srpski", "Matematika", "OET 2"],
-    ["Elektronika 1", "Fizicko", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
-    ["OET 2", "Matematika", "Elektronika 1", "Srpski", "Programiranje", "Fizika", "Biologija"]
-];
+    ["Matematika", "Matematika", "OET 2", "Biologija", "Fizicko", "Engleski", "Gradjansko"],
+    ["Programiranje", "Programiranje", "Baze Podataka", "Srpski", "Fizika", "OET 2"],
+    ["Matematika", "Programiranje", "Elektronika 1", "Web dizain", "Web dizain", "Engleski"],
+    ["OET 2", "Elektronika 1", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
+]
+
 var lost = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 var loet = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 function fillin(x, classes) {
