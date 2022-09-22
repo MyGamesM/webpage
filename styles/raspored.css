@@ -23,7 +23,7 @@ body {
 }
 
 td {
-	border: var(--btn-border-color) solid 0.8vw;
+	border: var(--btn-border-color) solid 1.8vw;
 	background-color: var(--btn-bg-color);
 }
 
