@@ -4,6 +4,7 @@
     margin: 0;
     border: 0;
     font-family: Poppins;
+	text-align: center;
 }
 
 :root {
@@ -21,72 +22,41 @@ html {
     background-color: var(--bg-color);
 }
 
-.nav {
-    display: flex;
-    background-color: var(--top-nav-color);
+td {
+	border: var(--btn-border-color) solid 1vh;
+	background-color: var(--btn-bg-color);
 }
 
-.navimg {
-    margin-left: 1.5vw;
-    margin-bottom: .5vw;
-    width: 10vw;
-    height: 10vw;
+td:nth-child(odd) {
+	width: 25vw;
 }
 
-.navitem {
-    background-color: #969696;
-    color: #0080ff;
-    margin-left: 10px;
-    padding: 2vw;
-    text-align: center;
-    text-decoration: none;
-    font-size: 4vw;
-    border-radius: 15px;
+td:nth-child(2) {
+	width: 75vw;
 }
 
-.sidebar {
-    display: grid;
-    position: absolute;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    bottom: 0;
+.subota {
+	background-color: var(--btn-bg-color);
+	border: var(--btn-border-color) solid calc((3vh + 3vw) / 2);
+	font-size: calc((8vh + 8vw) / 2);
 }
 
-.sidebutton {
-    background-color: var(--btn-bg-color);
-    border: 2vw solid var(--btn-border-color);
-    font-size: 5vw;
-    transition: .5s;
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	position: absolute;
+	bottom: 0;
 }
 
-.raspored {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 3vw;
-    text-align: center;
+.buttons > button {
+	height: 5vh;
+	width: 33.3vw;
+	background-color: var(--btn-bg-color);
+	border: var(--btn-border-color) solid 2vw;
+	font-size: calc((3vh + 3vw) / 2);
 }
 
-.p {
-    background-color: var(--btn-bg-color);
-    border: 2vw solid var(--btn-border-color);
-}
-
-.neradnidan {
-    background-color: var(--btn-bg-color);
-    border: 3vw solid var(--btn-border-color);
-    grid-column-start: 1;
-    grid-column-end: 4;
-    transition: .5s;
-}
-
-.neradnidan:hover {
-    transform: scale(1.05);
-    background-color: var(--btn-hover-color);
-}
-
-@media screen and (min-width: 430px) {
+/* @media screen and (min-width: 430px) {
     .p {
         border: 1vw solid var(--btn-border-color);
         background-color: var(--btn-bg-color);
@@ -109,42 +79,4 @@ html {
         font-size: 1.5vw;
         border-radius: 25px;
     }
-
-    .sidebar {
-        background-color: var(--bg-color);
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        transform: translateX(-100%);
-        left: 100vw;
-        bottom: auto;
-    }
-
-    .sidebutton {
-        background-color: var(--btn-bg-color);
-        border: 0.9vw solid var(--btn-border-color);
-        font-size: 2vw;
-        text-align: center;
-    }
-
-    .raspored {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: repeat(3, 15vw);
-        font-size: 1.7vw;
-        text-align: center;
-    }
-
-    .neradnidan {
-        background-color: #969696;
-        border: 3vw solid var(--btn-border-color);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-
-    .neradnidan:hover {
-        transform: scale(1.05);
-        background-color: var(--btn-hover-color);
-    }
-}
+} */

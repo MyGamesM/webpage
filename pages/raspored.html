@@ -1,67 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raspored</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/raspored.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="stylesheet" href="../styles/nav.css">
+	<script defer src="../scripts/raspored.js"></script>
+	<title>Document</title>
 </head>
 <body>
-    <div class="main">
-        <nav class="nav">
+	<div class="main">
+		<nav class="nav">
             <img src="../images/bread_1080px.png" class="navimg">
             <a href="../index.html" class="navitem">Home</a>
             <a href="./pages.html" class="navitem">Stuff</a>
         </nav>
-        <div class="sidebar">
-            <button class="sidebutton" onclick="day(1)">Monday</button>
-            <button class="sidebutton" onclick="day(2)">Tuesday</button>
-            <button class="sidebutton" onclick="day(3)">Wednesday</button>
-            <button class="sidebutton" onclick="day(4)">Thursday</button>
-            <button class="sidebutton" onclick="day(5)">Friday</button>
-            <button class="sidebutton" onclick="day(6)">Saturday</button>
-            <button class="sidebutton" onclick="day(7)">Today</button>
-            <button class="sidebutton" onclick="day(8)">Tomorrow</button>
-            <button class="sidebutton">Temporary</button>
-        </div>
-        <div class="raspored">
-            <div class="starttime">
-                <p id="a1" class="p"></p>
-                <p id="a2" class="p"></p>
-                <p id="a3" class="p"></p>
-                <p id="a4" class="p"></p>
-                <p id="a5" class="p"></p>
-                <p id="a6" class="p"></p>
-                <p id="a7" class="p"></p>
-            </div>
-            <div class="endtime">
-                <p id="b1" class="p"></p>
-                <p id="b2" class="p"></p>
-                <p id="b3" class="p"></p>
-                <p id="b4" class="p"></p>
-                <p id="b5" class="p"></p>
-                <p id="b6" class="p"></p>
-                <p id="b7" class="p"></p>
-            </div>
-            <div class="classes">
-                <p id="p1" class="p"></p>
-                <p id="p2" class="p"></p>
-                <p id="p3" class="p"></p>
-                <p id="p4" class="p"></p>
-                <p id="p5" class="p"></p>
-                <p id="p6" class="p"></p>
-                <p id="p7" class="p"></p>
-            </div>
-            <div id="ne" class="neradnidan">
-                <h1 class="nrdh1">Danas nema skola!</h1>
-            </div>
-        </div>
-    </div>
+		<div class="raspored">
+			<table>
+				<tbody id="tbody">
+				</tbody>
+			</table>
+		</div>
+		<div class="buttons" id="buttons">
+			<button>Ponedeljak</button>
+			<button>Utorak</button>
+			<button>Sreda</button>
+			<button>Cetvrtak</button>
+			<button>Petak</button>
+			<button>Subota</button>
+			<Button>Danas</Button>
+			<button>Sutra</button>
+			<button>Empty</button>
+		</div>
+		<div class="subota" id="subota">
+			<p>Neradni dan</p>
+		</div>
+	</div>
 </body>
-<script src="../scripts/raspored.js"></script>
 </html>
