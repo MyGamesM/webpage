@@ -18,12 +18,12 @@
     --sidebar-hover-color: #ccc;
 }
 
-html {
+body {
     background-color: var(--bg-color);
 }
 
 td {
-	border: var(--btn-border-color) solid 1vh;
+	border: var(--btn-border-color) solid 0.8vw;
 	background-color: var(--btn-bg-color);
 }
 
@@ -56,27 +56,32 @@ td:nth-child(2) {
 	font-size: calc((3vh + 3vw) / 2);
 }
 
-/* @media screen and (min-width: 430px) {
-    .p {
-        border: 1vw solid var(--btn-border-color);
-        background-color: var(--btn-bg-color);
-    }
+@media screen and (min-width: 430px) {
+	.table {
+		margin-left: 25vw;
+	}
 
-    .navimg {
-        margin-left: 1.5vw;
-        margin-bottom: .5vw;
-        width: 3.5vw;
-        height: 3.5vw;
-    }
+	td {
+		font-size: calc((4vw + 2vh) / 2);
+	}
 
-    .navitem {
-        background-color: #969696;
-        color: #0080ff;
-        margin-left: 10px;
-        padding: 1vw;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.5vw;
-        border-radius: 25px;
-    }
-} */
+	td:nth-child(odd) {
+		width: 10vw;
+	}
+	
+	td:nth-child(2) {
+		width: 25vw;
+	}
+
+	.buttons {
+		place-items: center;
+		margin-left: 35vw;
+	}
+
+	.buttons > button {
+		height: 7vh;
+		width: 10vw;
+		border: var(--btn-border-color) solid 0.6vw;
+		font-size: calc((2vh + 2vw) / 2);
+	}
+}
