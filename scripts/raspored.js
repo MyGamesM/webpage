@@ -3,11 +3,11 @@ let today = new Date().getDay()
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
-    ["Elektronika 1", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka"],
-    ["Matematika", "Matematika", "OET 2", "Biologija", "Fizicko", "Engleski", "Gradjansko"],
-    ["Programiranje", "Programiranje", "Baze Podataka", "Srpski", "Fizika", "OET 2"],
-    ["Matematika", "Programiranje", "Elektronika 1", "Web dizain", "Web dizain", "Engleski"],
-    ["OET 2", "Elektronika 1", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
+    ["Matematika", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka"],
+    ["Matematika", "Elektronika 1", "OET 2", "Biologija", "Fizicko", "Engleski", "Gradjansko"],
+    ["Programiranje", "Programiranje", "Elektronika 1", "OET 2", "Srpski", "Fizika"],
+    ["Elektronika 1", "Matemarika", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
+    ["OET 2", "Baze Podataka", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
 ]
 
 // const data = {
