@@ -6,7 +6,7 @@ const raspored = [
     ["Matematika", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka"],
     ["Matematika", "Elektronika 1", "OET 2", "Biologija", "Fizicko", "Engleski", "Gradjansko"],
     ["Programiranje", "Programiranje", "Elektronika 1", "OET 2", "Srpski", "Fizika"],
-    ["Elektronika 1", "Matemarika", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
+    ["Elektronika 1", "Matematika", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
     ["OET 2", "Baze Podataka", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
 ]
 
