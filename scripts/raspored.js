@@ -46,6 +46,8 @@ function delete_raspored() {
 
 function update_raspored(day) {
 	// if not mon-fri
+	console.log(day);
+	console.log(today);
 	if (day > 4) {
 		switch (day) {
 			case 5:
@@ -53,10 +55,15 @@ function update_raspored(day) {
 				document.getElementById("subota").style.display = "block"
 				return
 			case 6:
-				day = today - 1
+				if (today == 7) {
+					day = 5
+					update_raspored(day)
+				}
+				else day = today - 1
 				break
 			case 7:
-				day = today
+				if (today == 7) day = 0
+				else day = today
 				break
 			default:
 				break
