@@ -46,28 +46,25 @@ function delete_raspored() {
 
 function update_raspored(day) {
 	// if not mon-fri
-	console.log(day);
-	console.log(today);
-	if (day > 4) {
-		switch (day) {
-			case 5:
-				delete_raspored()
-				document.getElementById("subota").style.display = "block"
-				return
-			case 6:
-				if (today == 7) {
-					day = 5
-					update_raspored(day)
-				}
-				else day = today - 1
-				break
-			case 7:
-				if (today == 7) day = 0
-				else day = today
-				break
-			default:
-				break
-		}
+	console.log(`day: ${day}`);
+	console.log(`today: ${today}`);
+	switch (day) {
+		case 5:
+			delete_raspored()
+			document.getElementById("subota").style.display = "block"
+			break
+		case 6:
+			if (today == 7) day = 5
+			else day = today - 1
+			update_raspored(day)
+			break
+		case 7:
+			if (today == 7) day = 0
+			else day = today
+			update_raspored(day)
+			break
+		default:
+			break
 	}
 
 	if (day < 0 || day > 4) return
