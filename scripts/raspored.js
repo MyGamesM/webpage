@@ -1,5 +1,7 @@
-let today = new Date().getDay()
-
+const d = new Date()
+const today = d.getDay()
+let time = [480, 535, 600, 655, 710, 765, 815]
+let ctime = d.getHours() * 60 + d.getMinutes()
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
@@ -49,12 +51,14 @@ function update_raspored(day) {
 	console.log(`day: ${day}`);
 	console.log(`today: ${today}`);
 	switch (day) {
+		case -1:
+			day = 5
 		case 5:
 			delete_raspored()
 			document.getElementById("subota").style.display = "block"
 			break
 		case 6:
-			if (today == 7) day = 5
+			if (today == 7 || today == 6) day = 5
 			else day = today - 1
 			update_raspored(day)
 			break
@@ -80,9 +84,40 @@ function update_raspored(day) {
 			<td>${a}</td>
 			<td>${vreme_kraj[b]}</td>
 			`
-		
+
 		tbody.appendChild(elm)
 	})
+
+	if (ctime > 815) return
+
+	let sc = document.createElement("tr")
+	sc.innerHTML = `
+		<td></td>
+		<td>Sledeci cas</td>
+		<td></td>
+	`
+	tbody.appendChild(sc)
+
+	let elm = document.createElement("tr")
+	let t = getCurrentTime()
+
+	elm.innerHTML += `
+		<td>${verme_pocetak[t - 1]}</td>
+		<td>${raspored[day][t - 1]}</td>
+		<td>${vreme_kraj[t - 1]}</td>
+		`
+
+	tbody.appendChild(elm)
+}
+
+function getCurrentTime() {
+	let currentTime
+
+	time.forEach((a, b) => {
+		if (a <= ctime) currentTime = b
+	})
+
+	return currentTime
 }
 
 main()
