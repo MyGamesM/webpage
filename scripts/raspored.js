@@ -89,10 +89,6 @@ function update_raspored(day) {
 		tbody.appendChild(elm)
 	})
 
-	let x = document.createElement("p")
-	x.innerHTML = ctime
-	tbody.appendChild(x)
-
 	if (ctime > 815 || ctime <= 480) return
 
 	let sc = document.createElement("tr")
