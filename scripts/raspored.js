@@ -2,6 +2,7 @@ const d = new Date()
 const today = d.getDay()
 let time = [480, 535, 600, 655, 710, 765, 815]
 let ctime = d.getHours() * 60 + d.getMinutes()
+console.log(ctime);
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
@@ -48,8 +49,8 @@ function delete_raspored() {
 
 function update_raspored(day) {
 	// if not mon-fri
-	console.log(`day: ${day}`);
-	console.log(`today: ${today}`);
+	// console.log(`day: ${day}`);
+	// console.log(`today: ${today}`);
 	switch (day) {
 		case -1:
 			day = 5
@@ -88,7 +89,7 @@ function update_raspored(day) {
 		tbody.appendChild(elm)
 	})
 
-	if (480 <= ctime > 815) return
+	if (ctime > 815 || ctime <= 480) return
 
 	let sc = document.createElement("tr")
 	sc.innerHTML = `
