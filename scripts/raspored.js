@@ -88,7 +88,7 @@ function update_raspored(day) {
 		tbody.appendChild(elm)
 	})
 
-	if (ctime > 815) return
+	if (480 <= ctime > 815) return
 
 	let sc = document.createElement("tr")
 	sc.innerHTML = `
@@ -103,7 +103,7 @@ function update_raspored(day) {
 
 	elm.innerHTML += `
 		<td>${verme_pocetak[t - 1]}</td>
-		<td>${raspored[day][t - 1]}</td>
+		<td>${raspored[day][t]}</td>
 		<td>${vreme_kraj[t - 1]}</td>
 		`
 
