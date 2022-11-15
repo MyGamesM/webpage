@@ -2,7 +2,6 @@ const d = new Date()
 const today = d.getDay()
 let time = [480, 535, 600, 655, 710, 765, 815]
 let ctime = d.getHours() * 60 + d.getMinutes()
-console.log(ctime);
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
@@ -91,6 +90,7 @@ function update_raspored(day) {
 
 	if (ctime > 815 || ctime <= 480) return
 
+	// sledeci cas red
 	let sc = document.createElement("tr")
 	sc.innerHTML = `
 		<td></td>
@@ -99,9 +99,9 @@ function update_raspored(day) {
 	`
 	tbody.appendChild(sc)
 
+	// sledeci cas
 	let elm = document.createElement("tr")
 	let t = getCurrentTime()
-
 	elm.innerHTML += `
 		<td>${verme_pocetak[t - 1]}</td>
 		<td>${raspored[day][t]}</td>
@@ -115,7 +115,11 @@ function getCurrentTime() {
 	let currentTime
 
 	time.forEach((a, b) => {
-		if (a <= ctime) currentTime = b
+		if (a <= ctime) {
+			currentTime = b + 1
+			console.log(a, ctime, a <= ctime, currentTime)
+			return
+		}
 	})
 
 	return currentTime
