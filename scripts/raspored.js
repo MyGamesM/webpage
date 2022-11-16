@@ -5,11 +5,11 @@ let ctime = d.getHours() * 60 + d.getMinutes()
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
-    ["Matematika", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka"],
-    ["Matematika", "Elektronika 1", "OET 2", "Biologija", "Fizicko", "Engleski", "Gradjansko"],
+    ["Elektronika 1", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka", "Gradjansko"],
+    ["Matematika", "Matematika", "OET 2", "Fizicko", "Biologija", "Engleski"],
     ["Programiranje", "Programiranje", "Elektronika 1", "OET 2", "Srpski", "Fizika"],
-    ["Elektronika 1", "Matematika", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
-    ["OET 2", "Baze Podataka", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
+    ["Matematika", "Elektronika 1", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
+    ["Baze Podataka", "OET 2", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
 ]
 
 // const data = {
