@@ -90,7 +90,7 @@ function update_raspored(day) {
 		tbody.appendChild(elm)
 	})
 
-	sledeciCas(day)
+	// sledeciCas(day)
 }
 
 function sledeciCas(day) {
