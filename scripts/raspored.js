@@ -1,9 +1,6 @@
 const d = new Date()
-// const today = d.getDay()
-const today = 1
-let time = [480, 535, 600, 655, 710, 765, 815]
-// let ctime = d.getHours() * 60 + d.getMinutes()
-let ctime = 600
+const today = d.getDay()
+
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
@@ -13,18 +10,6 @@ const raspored = [
     ["Matematika", "Elektronika 1", "Programiranje", "Web dizain", "Web dizain", "Engleski"],
     ["Baze Podataka", "OET 2", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
 ]
-
-// const data = {
-// 	"verme_pocetak": ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"],
-// 	"vreme_kraj": ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"],
-// 	"raspored": [
-// 	    ["Elektronika 1", "Elektronika 1", "OET 2", "Srpski", "Baze Podataka", "Baze Podataka"],
-// 	    ["Matematika", "Matematika", "OET 2", "Biologija", "Fizicko", "Engleski", "Gradjansko"],
-// 	    ["Programiranje", "Programiranje", "Baze Podataka", "Srpski", "Fizika", "OET 2"],
-// 	    ["Matematika", "Programiranje", "Elektronika 1", "Web dizain", "Web dizain", "Engleski"],
-// 		["OET 2", "Elektronika 1", "Srpski", "Programiranje", "Biologija", "Fizika", "Fizicko"]
-// 	]
-// }
 
 function main () {
 	update_raspored(today - 1)
@@ -49,9 +34,6 @@ function delete_raspored() {
 }
 
 function update_raspored(day) {
-	// if not mon-fri
-	// console.log(`day: ${day}`);
-	// console.log(`today: ${today}`);
 	switch (day) {
 		case -1:
 			day = 5
@@ -89,45 +71,6 @@ function update_raspored(day) {
 
 		tbody.appendChild(elm)
 	})
-
-	// sledeciCas(day)
-}
-
-function sledeciCas(day) {
-	if (ctime > 815 || ctime <= 480) return
-	
-	// sledeci cas red
-	let sc = document.createElement("tr")
-	sc.innerHTML = `
-		<td></td>
-		<td>Sledeci cas</td>
-		<td></td>
-	`
-	tbody.appendChild(sc)
-
-	// sledeci cas
-	let elm = document.createElement("tr")
-	let t = getCurrentTime()
-	elm.innerHTML += `
-		<td>${verme_pocetak[t]}</td>
-		<td>${raspored[day][t]}</td>
-		<td>${vreme_kraj[t]}</td>
-		`
-
-	tbody.appendChild(elm)
-}
-
-function getCurrentTime() {
-	let currentTime
-
-	time.forEach((a, b) => {
-		if (a <= ctime) {
-			currentTime = b + 1
-			return
-		}
-	})
-
-	return currentTime
 }
 
 main()
