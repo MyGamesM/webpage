@@ -1,4 +1,4 @@
-const main = document.getElementById('main')
+const main = document.getElementById('squares')
 
 function createTable() {
     for (let i = 0; i < 9; i++) {

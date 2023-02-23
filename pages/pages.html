@@ -7,10 +7,7 @@
     <title>MyGamesM</title>
     <link rel="stylesheet" href="../styles/pages.css">
 	<link rel="stylesheet" href="../styles/nav.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="icon" type="image/png" href="../images/bread_1080px.png">
 </head>
 <body>
     <div class="main">
@@ -23,19 +20,23 @@
                 <p>1</p>
                 <p class="p">Raspored</p>
             </button>
-            <button class="main_button">2</button>
-            <button class="main_button">3</button>
-            <button class="main_button">4</button>
-            <button class="main_button">5</button>
-            <button class="main_button">6</button>
-            <button class="main_button">7</button>
-            <button class="main_button">8</button>
-            <button class="main_button" id="r">9</button>
+            <button class="main_button" id="squares">
+				<p>2</p>
+				<p class="p">Squares</p>
+			</button>
+            <button class="main_button"><p>3</p></button>
+            <button class="main_button"><p>4</p></button>
+            <button class="main_button"><p>5</p></button>
+            <button class="main_button"><p>6</p></button>
+            <button class="main_button"><p>7</p></button>
+            <button class="main_button"><p>8</p></button>
+            <button class="main_button" id="r"><p>9</p></button>
         </div>
     </div>
 </body>
 <script type="text/javascript">
     document.getElementById("raspored").onclick = function () { location.href = "./raspored.html"; };
+    document.getElementById("squares").onclick = function () { location.href = "./squares.html"; };
     document.getElementById("r").onclick = function () { location.href = "https://youtu.be/dQw4w9WgXcQ"; };
 </script>
 </html>

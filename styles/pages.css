@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -50,10 +48,7 @@ html {
     transform: scale(1.05);
 }
 
-.b1p1 { font-size: 10vw; }
-.b1p2 { font-size: 4vw; }
-.b2p1 { font-size: 10vw; }
-.b2p2 { font-size: 4vw; }
+.p { display: none; }
 
 @media screen and (min-width: 430px) {
     .navimg {
@@ -96,5 +91,9 @@ html {
         transform: scale(1.05);
     }
     
-	.p { font-size: 2vw; color: #ccc; }
+	.p { 
+		font-size: 2vw;
+		display: block;
+		color: #ccc;
+	}
 }
