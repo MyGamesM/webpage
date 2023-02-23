@@ -1,0 +1,35 @@
+body {
+	display: grid;
+	place-items: center;
+    background-color: #000;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(9, 100px);
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    transition: 350ms;
+}
+
+.c0 { background-color: #f00; }
+.c1 { background-color: #f80; }
+.c2 { background-color: #ff0; }
+.c3 { background-color: #8f0; }
+.c4 { background-color: #0f0; }
+.c5 { background-color: #0f8; }
+.c6 { background-color: #0ff; }
+.c7 { background-color: #08f; }
+.c8 { background-color: #00f; }
+
+.square:hover {
+    transform: scale(1.15);
+}
+
+.square:hover::after {
+    transform: scale(1);
+}
