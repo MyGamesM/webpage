@@ -6,8 +6,8 @@ const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20
 const raspored = [
     ["PiT", "PiT", "PiT", "Baze podataka", "Baze podataka", "Fizicko", "Srpski"],
     ["Matematika I", "Srpski", "Sociologija", "Engleski", "Matematika", "Matematika"],
-    ["Fizicko", "Srpski", "RS", "RS", "Programiranje", "Programiranje", "Programiranje"],
-    ["Matematika", "Sociologija", "Matematika I", "RS", "Engleski", "Gradjansko"],
+    ["Srpski", "RS", "RS", "RS", "Programiranje", "Programiranje", "Programiranje"],
+    ["Matematika", "Fizicko", "Sociologija", "Matematika I", "Engleski", "Gradjansko"],
     ["WP", "WP", "WP", "PiT", "PiT", "PiT"]
 ]
 
