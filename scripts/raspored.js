@@ -4,11 +4,11 @@ const today = d.getDay()
 const verme_pocetak = ["08:00", "08:55", "10:00", "10:55", "11:50", "12:45", "13:35"];
 const vreme_kraj = ["08:45", "09:40", "10:45", "11:40", "12:35", "13:30", "14:20"];
 const raspored = [
-    ["PiT", "PiT", "PiT", "Baze podataka", "Baze podataka", "Fizicko", "Srpski"],
-    ["Matematika I", "Srpski", "Sociologija", "Engleski", "Matematika", "Matematika"],
-    ["Srpski", "RS", "RS", "RS", "Programiranje", "Programiranje", "Programiranje"],
-    ["Matematika", "Fizicko", "Sociologija", "Matematika I", "Engleski", "Gradjansko"],
-    ["WP", "WP", "WP", "PiT", "PiT", "PiT"]
+    ["PIT", "PIT", "EP", "Matematika", "Matematika", "Srpski", "Preduzetnistvo"],
+    ["Programiranje", "Programiranje", "Programiranje", "Web", "Web", "Web"],
+    ["EP", "Srpski", "PIT", "PIT", "Fizicko", "Engleski"],
+    ["Matematika", "RMI", "RMI", "PIT", "PIT", "ZIS", "ZIS"],
+    ["Srpski", "RMI", "Engleski", "Preduzetnistvo", "Fizicko", "Gradjansko"]
 ]
 
 function main () {
